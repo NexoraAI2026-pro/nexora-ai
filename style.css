@@ -1,0 +1,949 @@
+/* =/* ==============================
+   GENERAL
+   ============================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+header {
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin: 20px 0 20px 30px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2563eb;
+}
+
+header nav {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 5px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #2563eb;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+
+/* ==============================
+   HERO
+   ============================== */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #eff6ff, #ffffff);
+}
+
+.hero-label {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #111827;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #4b5563;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   BOUTON HERO
+   ============================== */
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.30);
+}
+
+
+/* ==============================
+   A PROPOS
+   ============================== */
+
+.about {
+    padding: 70px 40px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   SERVICES
+   ============================== */
+
+.services {
+    padding: 70px 40px;
+    text-align: center;
+    background-color: #eef4ff;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-card {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(37, 99, 235, 0.15);
+    border-color: #2563eb;
+}.service-card .service-icon {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.15);
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   POURQUOI NEXORA AI
+   ============================== */
+
+.why {
+    padding: 70px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.why > h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.card {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.12);
+    border-color: #2563eb;
+}.card h3 {
+    transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+    color: #2563eb;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   CONTACT
+   ============================== */
+
+.contact {
+    padding: 70px 40px;
+    text-align: center;
+    background-color: #eef4ff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RESPONSIVE - TELEPHONE
+   ============================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 0 0 8px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    header nav {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 450px;
+        box-sizing: border-box;
+    }
+
+    .about,
+    .services,
+    .why,
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .about h2,
+    .services h2,
+    .why > h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+}.contact button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}/* ==============================
+   CHIFFRES CLÉS
+   ============================== */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.stat {
+    flex: 1;
+    max-width: 280px;
+}
+
+.stat h3 {
+    font-size: 38px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 40px 20px;
+    }
+
+    .stat {
+        width: 100%;
+    }
+
+}/* ==============================
+   ABOUT - VERSION MODERNE
+   ============================== */
+
+.about-label {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.about-description {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.about-points {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-point {
+    flex: 1;
+    padding: 25px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.about-point:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-point h3 {
+    color: #2563eb;
+    font-size: 20px;
+}
+
+.about-point p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+@media (max-width: 768px) {
+
+    .about-points {
+        flex-direction: column;
+    }
+
+    .about-point {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}/* ==============================
+   FOOTER MODERNE
+   ============================== */
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-brand h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: #d1d5db;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4 {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.footer-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* VERSION MOBILE */
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+}/* ==============================
+   CTA
+   ============================== */
+
+.cta {
+    padding: 80px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+}
+
+.cta-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.cta h2 {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    font-size: 38px;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: white;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .cta {
+        padding: 60px 20px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+}/* ==============================
+   HERO FEATURES
+   ============================== */
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.hero-features span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+@media (max-width: 768px) {
+
+    .hero-features {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+}.logo-link {
+    display: block;
+    text-decoration: none;
+}
+
+.logo-link:hover {
+    text-decoration: none;
+}
+
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.05);
+}.hero .contact-button {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 12px;
+    padding: 14px 28px;
+    background-color: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hero .contact-button:hover {
+    background-color: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+    .hero .contact-button {
+        margin-left: 0;
+    }
+
+}@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header .logo {
+        width: 140px;
+        margin: 0 0 10px 0;
+    }
+
+    header h1 {
+        margin: 0 0 15px 0;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-button,
+    .hero .contact-button {
+        display: block;
+        width: fit-content;
+        margin: 15px auto;
+    }
+
+}/* ==============================
+   NOS SOLUTIONS
+   ============================== */
+
+.solutions {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.solutions-label {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.solutions h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.solutions-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.solutions-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.solution-card {
+    flex: 1;
+    padding: 30px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.12);
+    border-color: #2563eb;
+}
+
+.solution-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.solution-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.solution-card p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+@media (max-width: 768px) {
+
+    .solutions {
+        padding: 60px 20px;
+    }
+
+    .solutions h2 {
+        font-size: 30px;
+    }
+
+    .solutions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solution-card {
+        width: 100%;
+        max-width: 450px;
+        box-sizing: border-box;
+    }
+
+}.contact-note {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}/* ==============================
+   NAVIGATION FIXE
+   ============================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}/* ==============================
+   EFFET DES BOUTONS
+   ============================== */
+
+.hero-button,
+.contact-button,
+.cta-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-button:hover,
+.contact-button:hover,
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.20);
+}/* ==============================
+   ESPACEMENT MOBILE HERO
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .hero-button,
+    .hero .contact-button {
+        margin-top: 12px;
+    }
+
+    .hero-features {
+        margin-top: 20px;
+    }
+
+}
